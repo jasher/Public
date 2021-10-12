@@ -1,0 +1,19 @@
+// Installation steps for Node + Gulp on Macbook w/ M1 processor
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+export NVM_DIR="$HOME/.nvm"\n[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
+
+nvm install v15
+nvm use 15.14
+npm install gulp@4.0.2 --save-dev
+npm install gulp-sass --save-dev
+npm install browser-sync --save-dev
+
+npm i
+gulp build
+
+// In package.json, set sass to version 5 for dart-saas 
+//    "dependencies": {
+//     "gulp-sass": "^5.0.0"
+
+// For sites that include jQuery Nice Select, add this fix to _nice-select-01.scss line 15:
+// $input_height: 	10;
