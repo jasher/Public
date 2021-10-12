@@ -2,7 +2,7 @@
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 export NVM_DIR="$HOME/.nvm"\n[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
 
-nvm install v15
+nvm install v15.14
 nvm use 15.14
 npm install gulp@4.0.2 --save-dev
 npm install gulp-sass --save-dev
