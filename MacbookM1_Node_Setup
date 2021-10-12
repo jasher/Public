@@ -4,7 +4,7 @@ export NVM_DIR="$HOME/.nvm"\n[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 nvm install v15
 nvm use 15.14
-npm install gulp@4.0.2 --savedev
+npm install gulp@4.0.2 --save-dev
 npm install gulp-sass --save-dev
 npm install browser-sync --save-dev
 npm install gulp-sass --save-dev
